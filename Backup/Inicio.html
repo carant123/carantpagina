@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Este texto es el t&iacute;tulo del documento</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Reel Web"/>
+		<meta name="keywords" content="HTML5, CSS"/>
+
+		<link rel="stylesheet" href="Css3/estilosDemoReel2.css"/>
+		<link rel="stylesheet" href="fonts.css"/>
+
+		<script src="js/reel.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+		
+		<script type="text/javascript">
+				$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+
+</script>
+
+	</head>
+	<body id="Pagina">
+		<div id="contenedor">
+
+			<header id="cabecera">
+				<img id="img-DemoReel" src="images/DemoReelMini.png" alt="Nombre">
+			</header>
+			
+			
+
+			<nav id="menu">
+				<ul>
+					<li>
+						<a href="#" id="mod">
+							<span class="primero">
+								<i class="icon icon-pacman"></i>
+							</span>
+							Resumen
+						</a>
+					</li>
+					<li>
+
+						<a href="#" id="aumenta">
+							<span class="segundo">
+								<i class="icon icon-mug"></i>
+							</span>
+							Animacion
+						</a>
+
+						<ul>
+							<li><a href="#" id="aumenta">Todos</a></li>
+							<li><a href="#" id="aumenta">3D</a></li>
+							<li><a href="#" id="aumenta">2D</a></li>
+						</ul>
+
+					</li>
+					<li>
+						<a href="#" id="reduce">
+							<span class="tercero">
+								<i class="icon icon-home3"></i>
+							</span>
+							Modelos
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="cuarto">
+								<i class="icon icon-hammer2"></i>
+							</span>
+							Contacto
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<section id="seccion">
+
+				<div class="img" id="img">
+					<a class="fancybox" rel="group" href="images/doctors.png">
+						<img src="images/doctors.png" alt="Fjords" id="img">
+					</a>
+				</div>
+				<div class="img">
+					<img src="images/doctors.png" alt="Fjords">
+				</div>
+				<div class="img">
+					<img src="images/doctors.png" alt="Fjords">
+				</div>
+				<div class="img">
+					<img src="images/doctors.png" alt="Fjords">
+				</div>
+
+				<div class="img">
+					<img src="images/doctors.png" alt="Fjords">
+				</div>
+
+
+			</section>
+
+
+
+			<footer id="pie"></footer>
+			
+		</div>
+		
+		
+		
+	</body>
+
+</html>

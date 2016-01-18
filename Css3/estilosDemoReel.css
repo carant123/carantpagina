@@ -1,0 +1,172 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption, hrgroup{
+display: block;
+}
+
+
+body {
+    background: url("../images/fondo.png");
+}
+
+#img-DemoReel{
+	position: relative;
+	top: 50px;
+}
+
+#contenedor{
+	width: 80%;
+	margin: 15px auto;
+	text-align: center;
+}
+
+#cabecera {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	padding: 20 px;
+	position: relative;
+}
+
+#menu{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+}
+
+#menu > ul{
+	display: table;
+	/*oculta lo que est fuera de la region*/
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	list-style: none;
+}
+/**/
+#menu > ul li{
+	/*inline-block alinea los bloque en vez de arriba a abajo de izq a derecha*/
+	display: inline-block;
+	list-style: none;
+	/*padding: 5px 50px;*/
+	font: bold 14px verdana, sans-serif;
+}
+
+
+#menu ul li a{
+	color: #000;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position:  relative;
+	text-align: center;
+	text-decoration: none;
+
+	-webkit-transition: all 3s ease;
+	-moz-transition: all 3s ease;
+	-ms-transition: all 3s ease;
+	-o-transition: all 3s ease;
+	transition: all 3s ease;
+}
+
+#menu ul li ul {
+	color: #000;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position:  absolute;
+	text-align: center;
+	text-decoration: none;
+
+	-webkit-transition: all 3s ease;
+	-moz-transition: all 3s ease;
+	-ms-transition: all 3s ease;
+	-o-transition: all 3s ease;
+	transition: all 3s ease;
+}
+
+#menu > ul li ul li{
+	/*inline-block alinea los bloque en vez de arriba a abajo de izq a derecha*/
+	display: block;
+	list-style: none;
+	/*padding: 5px 50px;*/
+	font: bold 14px verdana, sans-serif;
+}
+
+
+#menu > ul > li > a span {
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#menu > ul > li > a span .icon{
+	display: block;
+	line-height: 60px;
+}
+
+#menu > ul > li > a:hover > span {
+	top: 0;
+}
+
+
+#seccion {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	position: relative;
+}
+
+#pie {
+	background: #CCCCCC;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999999;
+}
+
+/*Colores*/
+
+#menu > ul > li > a .primero{
+	background: #439CB3;
+}
+
+#menu > ul > li > a .segundo{
+	background: #5da5a2;
+}
+
+#menu > ul > li > a .tercero{
+	background: #f25724;
+}
+
+#menu > ul > li > a .cuarto{
+	background: #D8D308;
+}
+
+div.img {
+	display:inline-block;
+	padding: 20px;
+    width: 23%;
+    height: 23%;
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+div.img img {
+    width: 100%;
+    height: 100%;
+}
+

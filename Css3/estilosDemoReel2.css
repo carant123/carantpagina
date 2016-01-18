@@ -1,0 +1,320 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption, hrgroup{
+display: block;
+}
+
+
+body {
+    /*background: url("../images/fondo.png");*/
+    background-color: #24272E;
+    height: 100%;
+    font-family: Muli;
+    font-size: 14px;
+    /*proveen barras de desplazamiento si hay contenido excedente.*/
+    overflow-x: auto;
+    /*evitar que la barra de dezplazamiento no moleste al contenido dinamico de la pagina*/
+    overflow-y: scroll;
+}
+
+#img-DemoReel{
+	position: relative;
+	top: 50px;
+}
+
+#contenedor{
+	text-align: center;
+}
+
+#cabecera {
+	width: 100%;
+	height: 150px;
+	padding: 20px;
+	position: relative;
+}
+
+#menu{
+	
+	position: relative;
+	width: 100%;
+	height: 73px;
+}
+
+/**/
+
+#menu ul{
+	/*inline-block alinea los bloque en vez de arriba a abajo de izq a derecha*/
+	width: 100%;
+}
+
+
+#menu ul li{
+	/*inline-block alinea los bloque en vez de arriba a abajo de izq a derecha*/
+	display: inline-block;
+	list-style: none;
+	padding: 0px 15px;
+	font: bold 14px verdana, sans-serif;
+}
+
+
+#menu ul li a{ 
+
+	/*diseño del boton*/
+	background-color: #686B6B;
+	color: #FFF;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position:  relative;
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+    
+
+/*	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;*/
+}
+
+#menu ul li a:hover{
+
+	/*diseño del boton*/
+	border-bottom: 3px solid;
+    border-color: #66C8CE;
+
+	/*-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;*/
+}
+
+
+#menu ul li ul li{
+
+	display: block;
+	list-style: none;
+	padding: 5px 15px;
+	font: bold 14px verdana, sans-serif;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#menu ul li ul li a{
+
+	/*diseño del boton*/
+	background-color: #686B6B;
+	color: #FFF;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position:  relative;
+	text-align: center;
+	text-decoration: none;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#menu ul li ul li a:hover{
+
+	/*diseño del boton*/
+	background-color: #57DFE6;
+	border-bottom: 0px solid;
+    border-color: #66C8CE;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+#menu ul li ul {
+
+	/*Menu extra sin al selecionar*/
+	width: auto;
+	position:absolute;
+	display: none;
+	min-width:140px;
+
+}
+
+#menu ul li:hover ul {
+
+	/*Menu extra sin al selecionar*/
+	display: block;
+
+}
+
+
+
+#Portafolio {
+
+	width: 100%;
+	height: auto;
+	text-align: center;
+/*	animation:fadeIn ease-in 1;
+	animation-duration: 0.5s;*/
+}
+
+
+#Datos{
+	
+	visibility: visible;
+	display: none;
+	padding: 25px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: white;
+/*	animation:fadeIn ease-in 1;
+	animation-duration: 0.5s;*/
+
+}
+
+#Contacto {
+
+	width: 100%;
+	height: 400px;
+	display: none;
+	text-align: center;
+/*	animation:fadeIn ease-in 1;
+	animation-duration: 0.5s;*/
+}
+
+
+#ContactoTitulo {
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#ContactoAreaTexto {
+	width: 47%;
+	height: auto;
+	text-align: center;
+	float: left;
+}
+
+#ContactoNomCorreBt {
+	width: 47%;
+	height: auto;
+	text-align: center;
+	float: right;
+}
+
+
+#ColumnaBlanca {
+	float: left;
+	width: 23%;
+	/*Establece la parte en blanco en todo el div*/
+	min-height: 1px;
+
+}
+
+#ResumenHabilidades {
+	float: left;
+	width: 25%;
+	text-align: left;
+
+}
+
+
+#Resumen {
+	float: left;
+	width: 40%;
+	text-align: left;
+}
+
+
+#pie {
+	clear: both;
+	background: rgba(204, 204, 204, 0);
+	text-align: center;
+	padding: 20px;
+	font: bold 14px verdana, sans-serif;
+	color: white;
+}
+
+#Datosbase {
+	clear: both;
+	width: 100%;
+}
+
+.propertyArea {
+	width: 100%;
+	height: 218px;
+	border: 1px solid #303136;
+}
+
+.TextFieldNombre {
+	width: 100%;
+	height: 56px;
+	margin-bottom: 23px;
+}
+
+.TextFieldCorreo {
+	width: 100%;
+	height: 56px;
+	margin-bottom: 10px;
+}
+
+.BtForm {
+	width: 100%;
+	height: 56px;
+}
+
+
+
+/*Colores*/
+
+
+div.img {
+
+	display:inline-block;
+	padding: 20px;
+    width: 23%;
+    height: 23%;
+
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+
+div.img img {
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+@keyframes fadeIn {
+ from 
+ { opacity:0; }
+  to 
+ { opacity:1; } 
+}
